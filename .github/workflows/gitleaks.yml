@@ -4,6 +4,9 @@ on:
   push:
     branches: [main, master]
   workflow_dispatch:
+permissions:
+  contents: read
+  pull-requests: write
 jobs:
   scan:
     runs-on: ubuntu-latest
